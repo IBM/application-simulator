@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">createDirectory</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQoJU3RyaW5nCWRpcmVjdG9yeSA9IElEYXRhVXRpbC5nZXRTdHJpbmcoIHBpcGVsaW5l
+Q3Vyc29yLCAiZGlyZWN0b3J5IiApOw0KcGlwZWxpbmVDdXJzb3IuZGVzdHJveSgpOw0KCVN0cmlu
+ZyBzdGF0dXM7DQovLyBwaXBlbGluZQ0KDQpGaWxlIGZpbGUgPSBuZXcgRmlsZShkaXJlY3Rvcnkp
+Ow0KaWYgKGZpbGUuZXhpc3RzKCkpIHsNCiAgICBzdGF0dXMgPSAiU3VjY2VzcyI7DQp9IGVsc2Ug
+ew0KCWlmIChmaWxlLm1rZGlycygpKXsNCgkJc3RhdHVzID0gIlN1Y2Nlc3MiOw0KCX0NCgllbHNl
+ew0KCQlzdGF0dXMgPSAiRmFpbGVkIjsNCgl9DQoJDQp9DQoNCi8vIHBpcGVsaW5lDQpJRGF0YUN1
+cnNvciBwaXBlbGluZUN1cnNvcl8xID0gcGlwZWxpbmUuZ2V0Q3Vyc29yKCk7DQoNCklEYXRhVXRp
+bC5wdXQoIHBpcGVsaW5lQ3Vyc29yXzEsICJzdGF0dXMiLCBzdGF0dXMgKTsNCnBpcGVsaW5lQ3Vy
+c29yXzEuZGVzdHJveSgpOw0KCQ==</value>
+</Values>

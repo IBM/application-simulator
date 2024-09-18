@@ -1,0 +1,190 @@
+<ng-container *ngIf="serviceRequest === undefined">
+    <div class="col-lg-4 offset-lg-4" style="margin-top: 204px;">
+        <div class="dlt-loader" aria-busy='false' aria-live="polite" aria-label="Loading">
+            <div class="dlt-loader--linear dlt-loader__text--below">
+                <div class="dlt-loader--linear-indeterminate" role="progressbar"></div>
+            </div>
+            <div class="dlt-loader__text">
+                <span>loading...</span>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="serviceRequest !== undefined">
+    <form name="serviceRequestForm">
+        <fieldset>
+            <legend>Service request details</legend>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="id">ID</label>
+                        <div class="dlt-form-group">
+                            <input id="id" name="id" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.id">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="name">Customer of repair</label>
+                        <div class="dlt-form-group">
+                            <input id="costOfRepair" name="costOfRepair" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.costOfRepair">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="description">Description</label>
+                        <div class="dlt-form-group">
+                            <input id="description" name="description" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.description">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="emergencyRepair">Emergency repair</label>
+                        <div class="dlt-form-group">
+                            <input id="emergencyRepair" name="emergencyRepair" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.emergencyRepair">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="endDate">End date</label>
+                        <div class="dlt-form-group">
+                            <input id="endDate" name="endDate" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.endDate">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="slaBreached">SLA breached</label>
+                        <div class="dlt-form-group">
+                            <input id="slaBreached" name="slaBreached" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.isSLABreached">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="startDate">Start date</label>
+                        <div class="dlt-form-group">
+                            <input id="startDate" name="startDate" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.startDate">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="result">Result</label>
+                        <div class="dlt-form-group">
+                            <input id="result" name="result" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.result">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="requestType">Request type</label>
+                        <div class="dlt-form-group">
+                            <input id="requestType" name="requestType" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.requestType">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="visitCount">Visit count</label>
+                        <div class="dlt-form-group">
+                            <input id="visitCount" name="visitCount" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.visitCount">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="device">Device serial no.</label>
+                        <div class="dlt-form-group">
+                            <input id="device" name="device" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.device.serialNumber">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="personnel">Personnel id</label>
+                        <div class="dlt-form-group">
+                            <input id="personnel" name="personnel" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.personnel.id">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="status">Request status</label>
+                        <div class="dlt-form-group">
+                            <input id="status" name="status" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.requestStatus.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="processType">Process type</label>
+                        <div class="dlt-form-group">
+                            <input id="processType" name="processType" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.processType.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="status">Type</label>
+                        <div class="dlt-form-group">
+                            <input id="type" name="type" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.serviceRequestType.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="severity">Severity</label>
+                        <div class="dlt-form-group">
+                            <input id="severity" name="severity" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.severity.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="customer">Customer</label>
+                        <div class="dlt-form-group">
+                            <input id="customer" name="customer" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="serviceRequest.customer.companyName">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</ng-container>

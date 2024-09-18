@@ -1,0 +1,110 @@
+<ng-container *ngIf="salesOrder === undefined">
+    <div class="col-lg-4 offset-lg-4" style="margin-top: 204px;">
+        <div class="dlt-loader" aria-busy='false' aria-live="polite" aria-label="Loading">
+            <div class="dlt-loader--linear dlt-loader__text--below">
+                <div class="dlt-loader--linear-indeterminate" role="progressbar"></div>
+            </div>
+            <div class="dlt-loader__text">
+                <span>loading...</span>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="salesOrder !== undefined">
+    <form name="salesOrderForm">
+        <fieldset>
+            <legend>Sales order details</legend>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="id">ID</label>
+                        <div class="dlt-form-group">
+                            <input id="id" name="id" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="salesOrder.id">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="totalValue">Total value</label>
+                        <div class="dlt-form-group">
+                            <input id="totalValue" name="totalValue" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="salesOrder.totalValue">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="orderDate">Order date</label>
+                        <div class="dlt-form-group">
+                            <input id="orderDate" name="orderDate" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="salesOrder.orderDate">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="shipDate">Ship date</label>
+                        <div class="dlt-form-group">
+                            <input id="shipDate" name="shipDate" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="salesOrder.shipDate">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="urgent">Urgent</label>
+                        <div class="dlt-form-group">
+                            <input id="urgent" name="urgent" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="salesOrder.isUrgent">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="itemCount">Item count</label>
+                        <div class="dlt-form-group">
+                            <input id="itemCount" name="itemCount" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="salesOrder.orderItemCount">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="currency">Currency</label>
+                        <div class="dlt-form-group">
+                            <input id="currency" name="currency" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="salesOrder.currency.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="status">Status</label>
+                        <div class="dlt-form-group">
+                            <input id="status" name="status" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="salesOrder.salesOrderStatus.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="customer">Customer</label>
+                        <div class="dlt-form-group">
+                            <input id="customer" name="customer" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="salesOrder.customer.companyName">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</ng-container>

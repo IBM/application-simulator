@@ -1,0 +1,12 @@
+appsim.users.names=admin_asuser,default_asuser
+appsim.users.admin_asuser.pwd=appsimadmin
+appsim.users.default_asuser.pwd=appsimmanage
+appsim.groups.names=admin_asgroup,default_asgroup
+appsim.groups.admin_asgroup.members=admin_asuser
+appsim.groups.default_asgroup.members=default_asuser
+appsim.acls.names=default_asacl,admin_asacl
+appsim.acls.admin_asacl.members=local/Administrators,local/admin_asgroup
+appsim.acls.default_asacl.members=local/Administrators,local/default_asgroup
+appsim.services.acl.Anonymous=AppSim.api.accessRequest.appsimaccessrequests_.services:addAccessRequests
+appsim.folders.acl.default_asacl=AppSim.api.address,AppSim.api.country,AppSim.api.currency,AppSim.api.customer,AppSim.api.dataset,AppSim.api.device,AppSim.api.location,AppSim.api.product,AppSim.api.purchaseOrder,AppSim.api.purchaseOrderItem,AppSim.api.salesOrder,AppSim.api.salesOrderItem,AppSim.api.serviceRequest,AppSim.api.chart,AppSim.api.inventory,AppSim.api.KPIMetric
+appsim.services.acl.admin_asacl=AppSim.api.accessRequest.appsimaccessrequests_.services:getAllAccessRequests,AppSim.api.accessRequest.appsimaccessrequests_.services:updateAccessRequestById,AppSim.api.dataset.appsimdatasets_.services:deleteDatasets,AppSim.api.dataset.appsimdatasets_.services:getAllDatasets

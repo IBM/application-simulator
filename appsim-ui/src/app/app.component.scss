@@ -1,0 +1,16 @@
+.container-fluid {
+    height: 100%;
+}
+
+nav {
+    height: calc(100% - 64px);
+    position: fixed;
+}
+
+.content-container {
+    padding: var(--dlt-spacing-3-x,1.5rem);
+}
+
+.body-container {
+    height: 100%;
+}

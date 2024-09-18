@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="shared">cHVibGljIHN0YXRpYyBmaW5hbCBTdHJpbmcgY2FjaGVNYW5hZ2VyTmFtZSA9ICJBcHBTaW0iOwpw
+dWJsaWMgc3RhdGljIGZpbmFsIGludCBub1ZhbHVlU3BlY2lmaWVkID0gLTE7CgkKCQoJ</value>
+  <value name="encodeutf8">true</value>
+  <array name="imports" type="value" depth="1">
+    <value>java.util.List</value>
+    <value>net.sf.ehcache.Cache</value>
+    <value>wm.server.ehcache.CacheServiceUtils</value>
+    <value>com.softwareag.wx.is.config.Access</value>
+    <value>com.softwareag.wx.is.config.WxConfig</value>
+  </array>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+</Values>

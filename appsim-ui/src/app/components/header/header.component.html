@@ -1,0 +1,42 @@
+<nav class="dlt-horizontal-nav with-shadow is-front">
+  <div style="margin-left: 24px; font-weight: 700;">
+      Application Simulator
+      <!--<img src="../../src/_layouts/delite-logo.svg" alt="Delite Logo" />-->
+  </div>
+  <div class="utility-wrapper">
+    <button class="dlt-button dlt-button-icon" style="margin-right: 12px;" (click)="toggleHelpModal()">
+      <i class="dlt-icon-help dlt-icon" data-modal-toggle="modal" data-modal-target="help_modal"></i>
+    </button>
+    <div class="dlt-dropdown" role="menu" aria-label="Profiles" aria-haspopup="true">
+      <button class="dlt-button dlt-button-icon " style="margin-right: 24px;">
+        <i class="dlt-icon-profile dlt-icon"></i>
+      </button>
+      <div class="dlt-overflow-menu" style="height: auto;">
+        <legend class="dlt-overlay-menu-group-label">{{loggedInUser.username}}</legend>
+        <div class="solid-line"></div>
+        <a routerLink="/login" (click)="logout()">Log out</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HELP MODAL -->
+<section id="help_modal" role="dialog" tabindex="-1" class="dlt-modal-window" [ngClass]="{'dlt-modal-window__open' : helpModalVisible === true}" aria-modal="true" aria-describedby="modal-header-readonly modal-content-readonly">
+  <div class="dlt-modal-window__container">
+    <div class="dlt-modal-window__header">
+      <button data-modal-close="" aria-label="close" class="dlt-button dlt-button-icon dlt-modal-window__close dlt-icon-sm" (click)="toggleHelpModal()">
+        <i class="dlt-icon-close dlt-icon"></i>
+      </button>
+      <h3 class="dlt-modal-window__title">
+        Help
+      </h3>
+    </div>
+    <div class="dlt-modal-window__content">
+      <p>
+        For any queries related to Application Simulator, kindly reach out to the Global Presales team at <a href="mailto: teamglobalpresales@softwareag.com">TeamGlobalPresales@SoftwareAG.com</a>.
+      </p>
+    </div>
+  </div>
+  <div class="dlt-modal-window__backdrop" data-modal-close=""></div>
+</section>
+

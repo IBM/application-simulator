@@ -1,0 +1,85 @@
+<nav  class="dlt-vertical-nav is-collapsible is-open is-not-top" [ngClass]="{'is-collapsed' : isCollapsed}" aria-expanded="true">
+  <div class="vertical-nav--outer-wrapper">
+      <div class="vertical-nav--wrapper">
+        <ul role="tree" class="dlt-vertical-nav-list" aria-labelledby="tree_label" aria-expanded="true">
+          <li role="treeitem" class="dlt-vertical-nav--item first-level"  aria-expanded="false" aria-selected="false">
+            <a class="menu-item--link has-sub-menu" routerLink="/">
+              <i class="dlt-icon-home dlt-icon left-icon"></i>
+              <span class="menu-item--label">Home</span>
+            </a>
+          </li>
+            <li role="treeitem" class="dlt-vertical-nav--item first-level"  aria-expanded="false" aria-selected="false">
+              <a class="menu-item--link has-sub-menu" routerLink="/customers">
+                <i class="dlt-icon-management dlt-icon left-icon"></i>
+                <span class="menu-item--label">Customers</span>
+              </a>
+            </li>
+            <li role="treeitem" class="dlt-vertical-nav--item first-level"  aria-expanded="false" aria-selected="false">
+              <a class="menu-item--link has-sub-menu" routerLink="/devices">
+                <i class="dlt-icon-devices dlt-icon left-icon"></i>
+                <span class="menu-item--label">Devices</span>
+              </a>
+            </li>
+            <li role="treeitem" class="dlt-vertical-nav--item first-level"  aria-expanded="false" aria-selected="false">
+              <a class="menu-item--link has-sub-menu" routerLink="/products">
+                <i class="dlt-icon-product dlt-icon left-icon"></i>
+                <span class="menu-item--label">Products</span>
+              </a>
+            </li>
+            <li role="treeitem" class="dlt-vertical-nav--item first-level"  aria-expanded="false" aria-selected="false">
+              <a class="menu-item--link has-sub-menu" routerLink="/purchaseorders">
+                <i class="dlt-icon-invoice dlt-icon left-icon"></i>
+                <span class="menu-item--label">Purchase Orders</span>
+              </a>
+            </li>
+            <li role="treeitem" class="dlt-vertical-nav--item first-level"  aria-expanded="false" aria-selected="false">
+              <a class="menu-item--link has-sub-menu" routerLink="/servicerequests">
+                <i class="dlt-icon-note dlt-icon left-icon"></i>
+                <span class="menu-item--label">Service Requests</span>
+              </a>
+            </li>
+            <li role="treeitem" class="dlt-vertical-nav--item first-level"  aria-expanded="false" aria-selected="false">
+              <a class="menu-item--link has-sub-menu" routerLink="/salesorders">
+                <i class="dlt-icon-price-tag dlt-icon left-icon"></i>
+                <span class="menu-item--label">Sales Orders</span>
+              </a>
+            </li>
+        </ul>
+      </div>
+  </div>
+  <div class="collapse-item-wrapper">
+    <button class="dlt-button dlt-button-icon collapsed" (click)="toggleCollapse()">
+      <i class="dlt-icon" [ngClass]="{'dlt-icon-panel-control-left' : !isCollapsed, 'dlt-icon-panel-control-right' : isCollapsed}"></i>
+    </button>
+  </div>
+</nav>
+                
+
+<!--<nav style="background: #f2f2f2;">
+    <div>
+      <a routerLink="/" class="list-group-item" [ngClass]="selectedRoute === '/' ? 'active' : ''">
+        <i class="fa fa-tachometer" aria-hidden="true"></i> Home
+      </a>
+      <a routerLink="/customers" class="list-group-item" [ngClass]="selectedRoute === '/customers' ? 'active' : ''">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Customers
+      </a>
+      <a routerLink="/devices" class="list-group-item" [ngClass]="selectedRoute === '/devices' ? 'active' : ''">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Devices
+      </a>
+      <a routerLink="/products" class="list-group-item" [ngClass]="selectedRoute === '/products' ? 'active' : ''">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Products
+      </a>
+      <a routerLink="/purchaseorders" class="list-group-item" [ngClass]="selectedRoute === '/purchaseorders' ? 'active' : ''">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Purchase Orders
+      </a>
+      <a routerLink="/servicerequests" class="list-group-item" [ngClass]="selectedRoute === '/servicerequests' ? 'active' : ''">
+        <i class="fa fa-cog" aria-hidden="true"></i> Service Requests
+      </a>
+      <a routerLink="/salesorders" class="list-group-item" [ngClass]="selectedRoute === '/salesorders' ? 'active' : ''">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sales Orders
+      </a>
+      <div style="position: absolute; bottom: 10px; left: 25px;">
+        <img src="assets/gplogo.png" style="width: 100px;" />
+      </div>
+    </div>
+  </nav>-->

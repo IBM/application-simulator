@@ -1,0 +1,36 @@
+<div class="requestaccess-container mt-5">
+    <form class="requestaccess-form" [formGroup]="requestAccessForm" (ngSubmit)="requestAcess()">
+        <h3 class="mb-4">Application Simulator</h3>
+        <div>
+            <h5>Request access for an account.</h5>
+        </div>
+        <div>
+            <p class="mb-4">Already have an account? <a routerLink="/login" style="text-decoration: underline;">Log in here</a></p>
+        </div>
+        <fieldset>
+            <div class="dlt-form-item" [ngClass]="{'error-input': requestAccessForm.controls.email.dirty && requestAccessForm.controls.email.errors}">
+                <label class="dlt-form-label" for="email">Contact email address</label>
+                <div class="dlt-form-group">
+                    <input id="email" type="text" required="" class="dlt-text-input" formControlName="email" placeholder="jane@business.com">
+                </div>
+                <div class="dlt-form-requirement" id="text-error" *ngIf="requestAccessForm.controls.email.dirty && requestAccessForm.controls.email.errors?.['required']">
+                    <i class="dlt-icon-error input-error-icon"></i>
+                    <span class="error-message">Contact email address is required</span>
+                </div>
+            </div>
+            <div class="dlt-form-item" [ngClass]="{'error-input': requestAccessForm.controls.purpose.dirty && requestAccessForm.controls.purpose.errors}">
+                <label class="dlt-form-label" for="purpose">Purpose</label>
+                <div class="dlt-form-group">
+                    <textarea id="purpose" type="text" required="" class="dlt-text-input dlt-textarea" formControlName="purpose" placeholder="Working on a customer PoC in Germany. Need access for 10 days."></textarea>
+                </div>
+                <div class="dlt-form-requirement" id="text-error" *ngIf="requestAccessForm.controls.purpose.dirty && requestAccessForm.controls.purpose.errors?.['required']">
+                    <i class="dlt-icon-error input-error-icon"></i>
+                    <span class="error-message">Purpose is required</span>
+                </div>
+            </div>
+        </fieldset>
+        <div class="dlt-form-item dlt-cta-holder">
+            <button class="dlt-button dlt-button-primary" style="width: 100%; display: block;" [disabled]="requestAccessForm.invalid || submitDisabled">Submit</button>
+        </div>
+    </form>
+</div>

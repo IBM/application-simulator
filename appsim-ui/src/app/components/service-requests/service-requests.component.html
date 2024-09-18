@@ -1,0 +1,149 @@
+<ng-container *ngIf="serviceRequests === undefined">
+    <div class="col-lg-4 offset-lg-4" style="margin-top: 204px;">
+        <div class="dlt-loader" aria-busy='false' aria-live="polite" aria-label="Loading">
+            <div class="dlt-loader--linear dlt-loader__text--below">
+                <div class="dlt-loader--linear-indeterminate" role="progressbar"></div>
+            </div>
+            <div class="dlt-loader__text">
+                <span>loading...</span>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="serviceRequests !== undefined">
+    <div class="dlt-data-table-container">
+        <section class="dlt-table-header">
+            <div class="dlt-data-table-title">
+              <span id="tblDesc1">Service requests</span>
+              <section class="dlt-table-toolbar">
+                  <div class="dlt-toolbar-content">
+                    <div class="dlt-dropdown" role="menu" aria-haspopup="true">
+                        <button class="dlt-button dlt-button-icon sm-button" aria-expanded="false" aria-label="Table settings"><em class="dlt-icon-settings"></em></button>
+                        <div class="dlt-overflow-menu">
+                          <div class="scroll-wrapper">
+                              <section class="menu-category">
+                                <div class="dlt-radio-button-group" style="margin-top: 16px; padding: 0 8px;">
+                                    <form>
+                                      <fieldset>
+                                          <legend class="dlt-radio-button-group-label">Row height</legend>
+                                          <div class="dlt-radio-button">
+                                            <input type="radio" id="radio-11" name="tableRowHeight" value="32">
+                                            <label for="radio-11">Small 32px</label>
+                                          </div>
+                                          <div class="dlt-radio-button">
+                                            <input type="radio" id="radio-21" name="tableRowHeight" value="48" checked>
+                                            <label for="radio-21">Default 48px</label>
+                                          </div>
+                                          <div class="dlt-radio-button">
+                                            <input type="radio" id="radio-31" name="tableRowHeight" value="56">
+                                            <label for="radio-31">Large 56px</label>
+                                          </div>
+                                          <div class="dlt-radio-button">
+                                            <input type="radio" id="radio-41" name="tableRowHeight" value="72">
+                                            <label for="radio-41">X-Large 72px</label>
+                                          </div>
+                                      </fieldset>
+                                    </form>
+                                </div>
+                              </section>
+                              <section class="menu-category" style="margin-top: 12px;  padding: 0 8px;">
+                                <form>
+                                    <fieldset class="dlt-fieldset sm-switch">
+                                      <legend class="dlt-switch-label">Zebra stripes</legend>
+                                      <div class="dlt-switch-item">
+                                          <input class="dlt-switch-input tableZebraStripes" id="tableZebraStripes2" type="checkbox" name="tableZebraStripes"
+                                            value="zebraStripes">
+                                          <label class="dlt-switch-text" for="tableZebraStripes2">
+                                          <span class="dlt-switch-appearance dlt-on-off"></span>
+                                          <span class="on">On</span>
+                                          <span class="off">Off</span>
+                                          </label>
+                                      </div>
+                                    </fieldset>
+                                </form>
+                              </section>
+                              <section class="menu-category" style="margin-top:20px; padding: 0 8px; margin-bottom:4px;">
+                                <form>
+                                    <fieldset class="dlt-fieldset sm-switch">
+                                      <legend class="dlt-switch-label">Grid view</legend>
+                                      <div class="dlt-switch-item">
+                                          <input class="dlt-switch-input tableGridview" id="tableGridview2" type="checkbox" name="tableGridview"
+                                            value="tableGridview">
+                                          <label class="dlt-switch-text" for="tableGridview2">
+                                          <span class="dlt-switch-appearance dlt-on-off"></span>
+                                          <span class="on">On</span>
+                                          <span class="off">Off</span>
+                                          </label>
+                                      </div>
+                                    </fieldset>
+                                </form>
+                              </section>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+              </section>
+            </div>
+        </section>
+        <div class="dlt-table-wrapper sticky-header" style="height: 334px;">
+            <table class="dlt-data-table density-medium" aria-describedby="tblDesc1">
+              <caption class="sr-only">Column headers with buttons are sortable</caption>
+              <thead>
+                  <tr>
+                    <th>
+                        <span style="padding: 0 0.5rem;">ID</span>
+                    </th>
+                    <th>
+                        <span style="padding: 0 0.5rem;">Start date</span>
+                    </th>
+                    <th>
+                        <span style="padding: 0 0.5rem;">End date</span>
+                    </th>
+                    <th>
+                        <span style="padding: 0 0.5rem;">Emergency repair</span>
+                    </th>
+                    <th>
+                        <span style="padding: 0 0.5rem;">Cost of repair</span>
+                    </th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr class="nonexpandable-zebra-stripes" *ngFor="let sr of serviceRequests.output">
+                    <td><a routerLink="/servicerequests/{{sr.id}}">{{sr.id}}</a></td>
+                    <td>
+                        <span>{{sr.startDate}}</span>
+                    </td>
+                    <td>
+                        <span>{{sr.endDate}}</span>
+                    </td>
+                    <td>
+                        <span>{{sr.emergencyRepair}}</span>
+                    </td>
+                    <td>
+                        <span>{{sr.costOfRepair}}</span>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+            <section class="dlt-pagination">
+              <div class="pagination-left" role="status">{{pagination.startRecordIndex}} - {{pagination.endRecordIndex}} of {{pagination.totalRecords}} items</div>
+              <div class="pagination-mid">
+                  <label class="pagination-text" for="pagination-1">Items per page 10</label>
+              </div>
+              <div class="pagination-right">
+                  <span class="dlt-icon-chevron-circle-left pagination-icon" tabindex="0" aria-label="Go to previous page" (click)="decrementPageNumber()" [hidden]="pagination.pageNumber === 1"></span>
+                  <label class="pagination-text" for="pagination-11">Page</label>
+                  <div class="select-page">
+                    <div class="dlt-form-group select-arrow-icon">
+                        <select class="dlt-select-input" id="pagination-11" [(ngModel)]="pagination.pageNumber" (click)="goToPageNumber()">
+                            <option *ngFor="let pn of [].constructor(pagination.numberOfPages); let i = index" [ngValue]="i+1">{{i+1}}</option>
+                        </select>
+                    </div>
+                  </div>
+                  <label class="pagination-text" for="pagination-11">of {{pagination.numberOfPages}}</label>
+                  <span class="dlt-icon-chevron-circle-right pagination-icon" tabindex="0" aria-label="Go to next page" (click)="incrementPageNumber()" [hidden]="pagination.pageNumber === pagination.numberOfPages"></span>
+              </div>
+            </section>
+        </div>
+    </div>
+</ng-container>

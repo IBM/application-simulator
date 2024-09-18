@@ -1,0 +1,188 @@
+﻿{
+	"dataLoad": {
+		"Address": [
+			{
+				"id": "ADDR00001",
+				"addressLine1": "Offshore",
+				"addressLine2": "NA",
+				"cityTown": "NA",
+				"postcodeZip": "NA",
+				"countyStateProvince": "Gulf of Mexico",
+				"countryId": "REFCOUN-002"
+			},
+			{
+				"id": "ADDR00002",
+				"addressLine1": "Offshore",
+				"addressLine2": "NA",
+				"cityTown": "NA",
+				"postcodeZip": "NA",
+				"countyStateProvince": "Gulf of Mexico",
+				"countryId": "REFCOUN-002"
+			},
+			{
+				"id": "ADDR00003",
+				"addressLine1": "Offshore",
+				"addressLine2": "NA",
+				"cityTown": "NA",
+				"postcodeZip": "NA",
+				"countyStateProvince": "Gulf of Mexico",
+				"countryId": "REFCOUN-002"
+			},
+			{
+				"id": "ADDR00004",
+				"addressLine1": "Bear Valley Springs",
+				"addressLine2": "NA",
+				"cityTown": "Bakersfield",
+				"postcodeZip": "93561",
+				"countyStateProvince": "California",
+				"countryId": "REFCOUN-002"
+			},
+			{
+				"id": "ADDR00005",
+				"addressLine1": "Old Floresville Rd",
+				"addressLine2": "NA",
+				"cityTown": "Stockdale",
+				"postcodeZip": "78114",
+				"countyStateProvince": "Texas",
+				"countryId": "REFCOUN-002"
+			},
+			{
+				"id": "ADDR00006",
+				"addressLine1": "Ranch Rd",
+				"addressLine2": "NA",
+				"cityTown": "Sierra Blanca",
+				"postcodeZip": "79851",
+				"countyStateProvince": "Texas",
+				"countryId": "REFCOUN-002"
+			},
+			{
+				"id": "ADDR00007",
+				"addressLine1": "OK-48",
+				"addressLine2": "NA",
+				"cityTown": "Bristow",
+				"postcodeZip": "74010",
+				"countyStateProvince": "Oklahoma",
+				"countryId": "REFCOUN-002"
+			},
+			{
+				"id": "ADDR00008",
+				"addressLine1": "Weld Country Road",
+				"addressLine2": "NA",
+				"cityTown": "Lucerne",
+				"postcodeZip": "80631",
+				"countyStateProvince": "Colorado",
+				"countryId": "REFCOUN-002"
+			},
+			{
+				"id": "ADDR00009",
+				"addressLine1": "Laramie County District",
+				"addressLine2": "NA",
+				"cityTown": "Cheyenne",
+				"postcodeZip": "82009",
+				"countyStateProvince": "Wyoming",
+				"countryId": "REFCOUN-002"
+			},
+			{
+				"id": "ADDR00010",
+				"addressLine1": "Raymond Lake Rd",
+				"addressLine2": "NA",
+				"cityTown": "Hyannis",
+				"postcodeZip": "69350",
+				"countyStateProvince": "Nebraska",
+				"countryId": "REFCOUN-002"
+			}
+		],
+		"Location": [
+			{
+				"id": "LOC00001",
+				"regionId": "REG-01",
+				"addressId": "ADDR00001",
+				"locationTypeId": "LOC-CAT-001",
+				"latitude": 40.621647,
+				"longitude": -121.198422,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "LOC00002",
+				"regionId": "REG-01",
+				"addressId": "ADDR00002",
+				"locationTypeId": "LOC-CAT-001",
+				"latitude": 40.864571,
+				"longitude": -123.373371,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "LOC00003",
+				"regionId": "REG-01",
+				"addressId": "ADDR00003",
+				"locationTypeId": "LOC-CAT-001",
+				"latitude": 36.594659,
+				"longitude": -115.422079,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "LOC00004",
+				"regionId": "REG-01",
+				"addressId": "ADDR00004",
+				"locationTypeId": "LOC-CAT-001",
+				"latitude": 35.196626,
+				"longitude": -118.724066,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "LOC00005",
+				"regionId": "REG-01",
+				"addressId": "ADDR00005",
+				"locationTypeId": "LOC-CAT-002",
+				"latitude": 29.21281,
+				"longitude": -98.023362,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "LOC00006",
+				"regionId": "REG-01",
+				"addressId": "ADDR00006",
+				"locationTypeId": "LOC-CAT-002",
+				"latitude": 31.544354,
+				"longitude": -105.626295,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "LOC00007",
+				"regionId": "REG-01",
+				"addressId": "ADDR00007",
+				"locationTypeId": "LOC-CAT-002",
+				"latitude": 35.56103,
+				"longitude": -96.277422,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "LOC00008",
+				"regionId": "REG-01",
+				"addressId": "ADDR00008",
+				"locationTypeId": "LOC-CAT-003",
+				"latitude": 40.479341,
+				"longitude": -104.69498,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "LOC00009",
+				"regionId": "REG-01",
+				"addressId": "ADDR00009",
+				"locationTypeId": "LOC-CAT-001",
+				"latitude": 41.569214,
+				"longitude": -104.652221,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "LOC00010",
+				"regionId": "REG-01",
+				"addressId": "ADDR00010",
+				"locationTypeId": "LOC-CAT-001",
+				"latitude": 42.274413,
+				"longitude": -101.611354,
+				"demoId": "GP00001"
+			}
+		]
+	}
+}

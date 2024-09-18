@@ -1,0 +1,194 @@
+<ng-container *ngIf="accessRequests === undefined">
+  <div class="col-lg-4 offset-lg-4" style="margin-top: 204px;">
+      <div class="dlt-loader" aria-busy='false' aria-live="polite" aria-label="Loading">
+          <div class="dlt-loader--linear dlt-loader__text--below">
+              <div class="dlt-loader--linear-indeterminate" role="progressbar"></div>
+          </div>
+          <div class="dlt-loader__text">
+              <span>loading...</span>
+          </div>
+      </div>
+  </div>
+</ng-container>
+<ng-container *ngIf="accessRequests !== undefined">
+  <div class="dlt-data-table-container">
+    <section class="dlt-table-header">
+      <div class="dlt-data-table-title">
+        <span id="tblDesc1">Access requests</span>
+        <section class="dlt-table-toolbar">
+          <div class="dlt-toolbar-content">
+            <div class="dlt-dropdown" role="menu" aria-haspopup="true">
+              <button class="dlt-button dlt-button-icon sm-button" aria-expanded="false" aria-label="Table settings"><em class="dlt-icon-settings"></em></button>
+              <div class="dlt-overflow-menu">
+                <div class="scroll-wrapper">
+                  <section class="menu-category">
+                    <div class="dlt-radio-button-group" style="margin-top: 16px; padding: 0 8px;">
+                      <form>
+                        <fieldset>
+                          <legend class="dlt-radio-button-group-label">Row height</legend>
+                          <div class="dlt-radio-button">
+                            <input type="radio" id="radio-11" name="tableRowHeight" value="32">
+                            <label for="radio-11">Small 32px</label>
+                          </div>
+                          <div class="dlt-radio-button">
+                            <input type="radio" id="radio-21" name="tableRowHeight" value="48" checked>
+                            <label for="radio-21">Default 48px</label>
+                          </div>
+                          <div class="dlt-radio-button">
+                            <input type="radio" id="radio-31" name="tableRowHeight" value="56">
+                            <label for="radio-31">Large 56px</label>
+                          </div>
+                          <div class="dlt-radio-button">
+                            <input type="radio" id="radio-41" name="tableRowHeight" value="72">
+                            <label for="radio-41">X-Large 72px</label>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </section>
+                  <section class="menu-category" style="margin-top: 12px;  padding: 0 8px;">
+                    <form>
+                      <fieldset class="dlt-fieldset sm-switch">
+                        <legend class="dlt-switch-label">Zebra stripes</legend>
+                        <div class="dlt-switch-item">
+                          <input class="dlt-switch-input tableZebraStripes" id="tableZebraStripes2" type="checkbox" name="tableZebraStripes"
+                            value="zebraStripes">
+                          <label class="dlt-switch-text" for="tableZebraStripes2">
+                          <span class="dlt-switch-appearance dlt-on-off"></span>
+                          <span class="on">On</span>
+                          <span class="off">Off</span>
+                          </label>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </section>
+                  <section class="menu-category" style="margin-top:20px; padding: 0 8px; margin-bottom:4px;">
+                    <form>
+                      <fieldset class="dlt-fieldset sm-switch">
+                        <legend class="dlt-switch-label">Grid view</legend>
+                        <div class="dlt-switch-item">
+                          <input class="dlt-switch-input tableGridview" id="tableGridview2" type="checkbox" name="tableGridview"
+                            value="tableGridview">
+                          <label class="dlt-switch-text" for="tableGridview2">
+                            <span class="dlt-switch-appearance dlt-on-off"></span>
+                            <span class="on">On</span>
+                            <span class="off">Off</span>
+                          </label>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <div class="dlt-table-wrapper sticky-header" style="height: 334px;">
+      <table class="dlt-data-table density-medium" aria-describedby="tblDesc1">
+        <caption class="sr-only">Column headers with buttons are sortable</caption>
+        <thead>
+          <tr>
+            <th>
+                <span style="padding: 0 0.5rem;">ID</span>
+            </th>
+            <th>
+                <span style="padding: 0 0.5rem;">Email ID</span>
+            </th>
+            <th>
+                <span style="padding: 0 0.5rem;">Purpose</span>
+            </th>
+            <th>
+                <span style="padding: 0 0.5rem;">Request Timestamp</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="nonexpandable-zebra-stripes" *ngFor="let ar of accessRequests.output">
+            <td>
+                <span>{{ar.id}}</span>
+            </td>
+            <td>
+                <span>{{ar.email}}</span>
+            </td>
+            <td>
+                <span>{{ar.purpose}}</span>
+            </td>
+            <td>
+                <span>{{ar.creationTimestamp}}</span>
+            </td>
+            <td class="row-actions">
+              <div class="dlt-dropdown" role="menu" aria-haspopup="true">
+                <button class="dlt-button dlt-button-icon" aria-label="More" aria-expanded="false" aria-describedby="tr-row-12"><em class="dlt-icon-more-menu dlt-icon"></em></button>
+                <div class="dlt-overflow-menu" style="height: auto;">
+                    <a (click)="this.approveClicked(ar.id)"><em class="dlt-icon-check-circle menu-icons"></em>Approve</a>
+                    <a (click)="this.rejectRequest(ar.id)"><em class="dlt-icon-cross-circle menu-icons"></em>Reject</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-container>
+
+<!--Access Request Approved Credentials Modal -->
+<section id="credentialsModal" role="dialog" tabindex="-1" class="dlt-modal-window" [ngClass]="{'dlt-modal-window__open' : credentialsModalVisible === true}" aria-describedby="modal-header-readonly modal-content-readonly" aria-modal="true" aria-describedby="modal-content-readonly">
+  <div class="dlt-modal-window__container">
+    <div class="dlt-modal-window__header">
+        <button aria-label="close" class="dlt-button dlt-button-icon dlt-modal-window__close dlt-icon-sm" (click)="toggleCredentialsModal()">
+            <i class="dlt-icon-close dlt-icon"></i>
+        </button>
+        <h3 id="modal-header-readonly" class="dlt-modal-window__title">
+            Credentials
+        </h3>
+    </div>
+    <div class="dlt-modal-window__content" id="modal-content-readonly">
+        <p>
+            <b>Username:</b> {{approvedDatasetCredentials.username}}
+        </p>
+        <p>
+            <b>Password:</b> {{approvedDatasetCredentials.password}}
+        </p>
+    </div>
+  </div>
+  <div class="dlt-modal-window__backdrop" data-modal-close></div>
+</section>
+
+<!-- Approve Access Request Modal -->
+<section id="form_modal" role="dialog" tabindex="-1" class="dlt-modal-window" [ngClass]="{'dlt-modal-window__open' : approveAccessModalVisible === true}"
+  aria-describedby="modal-header-form" aria-modal="true">
+  <div class="dlt-modal-window__container">
+    <div class="dlt-modal-window__header">
+        <button aria-label="close" class="dlt-button dlt-button-icon dlt-modal-window__close dlt-icon-sm" (click)="toggleApproveAccessRequestModal()">
+          <i class="dlt-icon-close dlt-icon"></i>
+        </button>
+        <h3 id="modal-header-form" class="dlt-modal-window__title">
+          Approve access request
+        </h3>
+    </div>
+    <div class="dlt-modal-window__content">
+        <div class="dlt-form-item" style="margin-bottom: 24px;" [class.error-input]="isDatasetExists === true">
+          <label class="dlt-form-label" for="text-input-11">Dataset name</label>
+          <div class="dlt-form-group">
+              <input data-modal-prime-focus id="text-input-11" type="text" required="true" class="dlt-text-input"
+                placeholder="iotabc" [(ngModel)]="datasetName" (keyup)="validateDatasetName(datasetName)"/>
+          </div>
+          <div class="dlt-form-requirement" *ngIf="isDatasetExists === true">
+            <i class="dlt-icon-error input-error-icon"></i><span class="error-message">Dataset name already exists.</span>
+          </div>
+        </div>
+    </div>
+    <div class="dlt-modal-window__footer">
+        <button class="dlt-button dlt-button-secondary" (click)="toggleApproveAccessRequestModal()">
+        Cancel
+        </button>
+        <button class="dlt-button dlt-button-primary" data-modal-prime-focus [disabled]="isDatasetExists === true || datasetName === ''" (click)="approveRequest(datasetName)">
+        Approve
+        </button>
+    </div>
+  </div>
+  <div class="dlt-modal-window__backdrop" data-modal-close></div>
+</section>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">invokeService</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQoJU3RyaW5nCXNlcnZpY2VOYW1lID0gSURhdGFVdGlsLmdldFN0cmluZyggcGlwZWxp
+bmVDdXJzb3IsICJzZXJ2aWNlTmFtZSIgKTsNCglJRGF0YSBzZXJ2aWNlSW5wdXQgPSBJRGF0YVV0
+aWwuZ2V0SURhdGEocGlwZWxpbmVDdXJzb3IsICJzZXJ2aWNlSW5wdXQiKTsNCnBpcGVsaW5lQ3Vy
+c29yLmRlc3Ryb3koKTsNCg0KSURhdGEgc2VydmljZU91dHB1dDsNCnRyeSB7DQoJc2VydmljZU91
+dHB1dCA9IFNlcnZpY2UuZG9JbnZva2UoTlNOYW1lLmNyZWF0ZShzZXJ2aWNlTmFtZSksIHNlcnZp
+Y2VJbnB1dCk7DQp9IGNhdGNoIChFeGNlcHRpb24gZSkgew0KCXRocm93IG5ldyBTZXJ2aWNlRXhj
+ZXB0aW9uKGUpOw0KfQ0KDQovLyBwaXBlbGluZQ0KSURhdGFDdXJzb3IgcGlwZWxpbmVDdXJzb3Jf
+MSA9IHBpcGVsaW5lLmdldEN1cnNvcigpOw0KSURhdGFVdGlsLnB1dCggcGlwZWxpbmVDdXJzb3Jf
+MSwgInNlcnZpY2VPdXRwdXQiLCBzZXJ2aWNlT3V0cHV0ICk7DQpwaXBlbGluZUN1cnNvcl8xLmRl
+c3Ryb3koKTsNCgk=</value>
+</Values>

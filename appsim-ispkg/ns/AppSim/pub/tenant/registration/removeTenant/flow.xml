@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT>Remove tenant from list of registered tenants</COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE TIMEOUT="" SERVICE="AppSim.impl.tenant.registration:unregisterTenant" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT>Remove tenant from list of registered tenants</COMMENT>
+</INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="AppSim.impl.tenant.dataStore.load:removeDataStores" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT>Remove all datasets for tenant</COMMENT>
+</INVOKE>
+</FLOW>

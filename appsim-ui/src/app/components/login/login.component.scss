@@ -1,0 +1,21 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-container .login-form {
+    min-width: 380px;
+}
+
+.dlt-form-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+fieldset legend {
+    font-size: var(--dlt-font-size-md, 1.125rem);
+    font-weight: var(--dlt-font-weight-medium, 500);
+    line-height: 1.5rem;
+    margin-bottom: var(--dlt-spacing-2-x, 1rem);
+}
+
+

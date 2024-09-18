@@ -1,0 +1,811 @@
+﻿{
+	"dataLoad": {
+		"RefDeviceStatus": [
+			{
+				"id": "DEV-STA-01",
+				"name": "Unavailable"
+			},
+			{
+				"id": "DEV-STA-02",
+				"name": "Errors"
+			},
+			{
+				"id": "DEV-STA-03",
+				"name": "Predict Failure"
+			},
+			{
+				"id": "DEV-STA-04",
+				"name": "Active"
+			},
+			{
+				"id": "DEV-STA-05",
+				"name": "Update"
+			},
+			{
+				"id": "DEV-STAT-000",
+				"name": "Unavailable"
+			},
+			{
+				"id": "DEV-STAT-111",
+				"name": "Status OK, Inventory OK"
+			},
+			{
+				"id": "DEV-STAT-212",
+				"name": "Status OK, Inventory Warn"
+			},
+			{
+				"id": "DEV-STAT-313",
+				"name": "Status OK, Inventory Error"
+			},
+			{
+				"id": "DEV-STAT-221",
+				"name": "Status Warn, Inventory OK"
+			},
+			{
+				"id": "DEV-STAT-222",
+				"name": "Status Warn, Inventory Warn"
+			},
+			{
+				"id": "DEV-STAT-323",
+				"name": "Status Warn, Inventory Error"
+			},
+			{
+				"id": "DEV-STAT-331",
+				"name": "Status Error, Inventory OK"
+			},
+			{
+				"id": "DEV-STAT-332",
+				"name": "Status Error, Inventory Warn"
+			},
+			{
+				"id": "DEV-STAT-333",
+				"name": "Status Error, Inventory Error"
+			}
+		],
+		"RefCustomerGrade": [
+			{
+				"id": "CUS-GR-01",
+				"name": "New"
+			},
+			{
+				"id": "CUS-GR-02",
+				"name": "Regular"
+			},
+			{
+				"id": "CUS-GR-03",
+				"name": "Premium"
+			},
+			{
+				"id": "CUS-GR-04",
+				"name": ""
+			}
+		],
+		"RefBrand": [
+			{
+				"id": "BRD-001",
+				"name": "Brand"
+			}
+		],
+		"RefSalesOrderStatus": [
+			{
+				"id": "ORD-STA-01",
+				"name": "New"
+			},
+			{
+				"id": "ORD-STA-02",
+				"name": "Shipping"
+			},
+			{
+				"id": "ORD-STA-03",
+				"name": "Shipping Complete"
+			},
+			{
+				"id": "ORD-STA-04",
+				"name": "Waiting for Collection"
+			},
+			{
+				"id": "ORD-STA-05",
+				"name": "Order Complete"
+			},
+			{
+				"id": "ORD-STA-06",
+				"name": "Return"
+			},
+			{
+				"id": "ORD-STA-07",
+				"name": "Dropoff"
+			},
+			{
+				"id": "ORD-STA-08",
+				"name": "Purchase"
+			},
+			{
+				"id": "ORD-STA-09",
+				"name": "Exchange"
+			},
+			{
+				"id": "ORD-STA-10",
+				"name": "Reward-Purchase"
+			}
+		],
+		"RefProcessType": [
+			{
+				"id": "PRO-TYPE-01",
+				"name": "Online"
+			},
+			{
+				"id": "PRO-TYPE-02",
+				"name": "In-Store"
+			},
+			{
+				"id": "PRO-TYPE-03",
+				"name": "Amazon"
+			},
+			{
+				"id": "PRO-TYPE-04",
+				"name": "Telephone"
+			},
+			{
+				"id": "PRO-TYPE-05",
+				"name": "Shipment"
+			},
+			{
+				"id": "PRO-TYPE-06",
+				"name": "Service Request"
+			}
+		],
+		"RefLocationType": [
+			{
+				"id": "LOC-CAT-001",
+				"name": "Device"
+			},
+			{
+				"id": "LOC-CAT-002",
+				"name": "Warehouse"
+			},
+			{
+				"id": "LOC-CAT-003",
+				"name": "Office"
+			},
+			{
+				"id": "LOC-CAT-004",
+				"name": "Store"
+			},
+			{
+				"id": "LOC-CAT-005",
+				"name": "Supplier"
+			},
+			{
+				"id": "LOC-CAT-006",
+				"name": "Factory"
+			},
+			{
+				"id": "LOC-CAT-007",
+				"name": "Field"
+			}
+		],
+		"RefTransactionType": [
+			{
+				"id": "REFTRAN-001",
+				"name": "Purchase Order"
+			},
+			{
+				"id": "REFTRAN-002",
+				"name": "Removed Inventory"
+			},
+			{
+				"id": "REFTRAN-003",
+				"name": "Refilled Inventory"
+			}
+		],
+		"RefManufacturer": [
+			{
+				"id": "MNFR_001",
+				"name": "Certuss"
+			},
+			{
+				"id": "MNFR_002",
+				"name": "Lexus"
+			},
+			{
+				"id": "MNFR_003",
+				"name": "Lexmark"
+			},
+			{
+				"id": "MNFR_004",
+				"name": "Kuka"
+			},
+			{
+				"id": "MNFR_005",
+				"name": "Amelin"
+			},
+			{
+				"id": "MNFR_006",
+				"name": "Krompton"
+			},
+			{
+				"id": "MNFR_007",
+				"name": "Maharaja"
+			},
+			{
+				"id": "MNFR_008",
+				"name": "Kent"
+			},
+			{
+				"id": "MNFR_009",
+				"name": "Redisis"
+			},
+			{
+				"id": "MNFR_010",
+				"name": "Globe"
+			},
+			{
+				"id": "MNFR_011",
+				"name": "Terra Manufacturers"
+			},
+			{
+				"id": "MNFR_012",
+				"name": "Prestige"
+			},
+			{
+				"id": "MNFR_013",
+				"name": "Timexo"
+			},
+			{
+				"id": "MNFR_014",
+				"name": "PowerTrek"
+			},
+			{
+				"id": "MNFR_015",
+				"name": "GE"
+			},
+			{
+				"id": "MNFR_016",
+				"name": "ABB"
+			},
+			{
+				"id": "MNFR_017",
+				"name": "Gorman-Rupp Pumps"
+			},
+			{
+				"id": "MNFR_018",
+				"name": "Cornell Pump Company"
+			},
+			{
+				"id": "MNFR_019",
+				"name": "Tsurumi Pump"
+			}
+		],
+		"RefAlertType": [
+			{
+				"id": "ALERTTYPE-P1-001",
+				"name": "Threshold Breach"
+			},
+			{
+				"id": "ALERTTYPE-INVENTORY-BREACH",
+				"name": "Low-stock alert"
+			}
+		],
+		"RefSeverity": [
+			{
+				"id": "SEV-001",
+				"name": "Low"
+			},
+			{
+				"id": "SEV-002",
+				"name": "Medium"
+			},
+			{
+				"id": "SEV-003",
+				"name": "High"
+			},
+			{
+				"id": "SEV-004",
+				"name": "Critical"
+			}
+		],
+		"RefAlertStatus": [
+			{
+				"id": "ALERTSTATUS-001",
+				"name": "New"
+			},
+			{
+				"id": "ALERTSTATUS-002",
+				"name": "Acknowledged"
+			},
+			{
+				"id": "ALERTSTATUS-003",
+				"name": "In Progress"
+			},
+			{
+				"id": "ALERTSTATUS-004",
+				"name": "Complete"
+			},
+			{
+				"id": "ALERTSTATUS-005",
+				"name": "Closed"
+			}
+		],
+		"RefRequestStatus": [
+			{
+				"id": "REQ-STA-001",
+				"name": "Open"
+			},
+			{
+				"id": "REQ-STA-002",
+				"name": "Pending"
+			},
+			{
+				"id": "REQ-STA-003",
+				"name": "Closed"
+			}
+		],
+		"RefMerchandise": [
+			{
+				"id": "MERCH-001",
+				"name": "Retail"
+			}
+		],
+		"RefDeviceCategory": [
+			{
+				"id": "DEV-CAT-001",
+				"name": "Smart Badge"
+			},
+			{
+				"id": "DEV-CAT-002",
+				"name": "Catalys"
+			},
+			{
+				"id": "DEV-CAT-003",
+				"name": "Printers"
+			},
+			{
+				"id": "DEV-CAT-004",
+				"name": "Vending Machine"
+			}
+		],
+		"RefModel": [
+			{
+				"id": "00001",
+				"name": "MD76782"
+			},
+			{
+				"id": "00002",
+				"name": "MD87722"
+			},
+			{
+				"id": "00003",
+				"name": "MD44422"
+			},
+			{
+				"id": "00004",
+				"name": "MD66682"
+			},
+			{
+				"id": "00005",
+				"name": "MD88882"
+			}
+		],
+		"RefRegion": [
+			{
+				"id": "REG-01",
+				"name": "Americas"
+			},
+			{
+				"id": "REG-02",
+				"name": "Asia"
+			},
+			{
+				"id": "REG-03",
+				"name": "Europe"
+			},
+			{
+				"id": "REG-04",
+				"name": "Africa"
+			},
+			{
+				"id": "REG-05",
+				"name": "Oceania"
+			}
+		],
+		"RefProductType": [
+			{
+				"id": "PRO-CAT-001",
+				"name": "Spare Parts"
+			},
+			{
+				"id": "PRO-CAT-002",
+				"name": "Cosmetics"
+			},
+			{
+				"id": "PRO-CAT-003",
+				"name": "Furniture"
+			},
+			{
+				"id": "PRO-CAT-004",
+				"name": "Drinks"
+			},
+			{
+				"id": "PRO-CAT-005",
+				"name": "Stationery"
+			},
+			{
+				"id": "PRO-CAT-005",
+				"name": "Consumables"
+			}
+		],
+		"RefUOMType": [
+			{
+				"id": "UOM-001",
+				"name": "Units"
+			},
+			{
+				"id": "UOM-002",
+				"name": "kg"
+			},
+			{
+				"id": "UOM-003",
+				"name": "Each"
+			},
+			{
+				"id": "UOM-004",
+				"name": "Percent"
+			},
+			{
+				"id": "UOM-005",
+				"name": "Dollars (Million)"
+			},
+			{
+				"id": "UOM-006",
+				"name": "Days"
+			},
+			{
+				"id": "UOM-007",
+				"name": "Dollars"
+			},
+			{
+				"id": "UOM-008",
+				"name": "Minutes"
+			},
+			{
+				"id": "UOM-009",
+				"name": "Avg Score Percent"
+			},
+			{
+				"id": "UOM-010",
+				"name": "kWh"
+			},
+			{
+				"id": "UOM-011",
+				"name": "Barrels"
+			},
+			{
+				"id": "UOM-012",
+				"name": "Gallons"
+			},
+			{
+				"id": "UOM-013",
+				"name": "Hours"
+			}
+		],
+		"RefCurrency": [
+			{
+				"id": "CUR-001",
+				"name": "GBP",
+				"symbol": "£"
+			},
+			{
+				"id": "CUR-002",
+				"name": "USD",
+				"symbol": "$"
+			},
+			{
+				"id": "CUR-003",
+				"name": "Euro",
+				"symbol": "€"
+			}
+		],
+		"RefTransactionActionType": [
+			{
+				"id": "REFTRANACT-001",
+				"name": "Issue"
+			}
+		],
+		"RefStreamType": [
+			{
+				"id": "REFSTR-001",
+				"name": "Temperature (C)"
+			},
+			{
+				"id": "REFSTR-002",
+				"name": "Pressure (PSI)"
+			},
+			{
+				"id": "REFSTR-003",
+				"name": "Vibration (Hz)"
+			}
+		],
+		"RefDataType": [
+			{
+				"id": "REFDATA-001",
+				"name": "Raw"
+			},
+			{
+				"id": "REFDATA-002",
+				"name": "Computed"
+			}
+		],
+		"RefSourceType": [
+			{
+				"id": "REFSRC-001",
+				"name": "Device"
+			},
+			{
+				"id": "REFSRC-002",
+				"name": "Sensor"
+			}
+		],
+		"RefCustomerType": [
+			{
+				"id": "REFCUS-001",
+				"name": "Organisation"
+			},
+			{
+				"id": "REFCUS-002",
+				"name": "Private"
+			}
+		],
+		"RefCountry": [
+			{
+				"id": "REFCOUN-001",
+				"name": "United Kingdom"
+			},
+			{
+				"id": "REFCOUN-002",
+				"name": "United States of America"
+			},
+			{
+				"id": "REFCOUN-003",
+				"name": "Germany"
+			},
+			{
+				"id": "REFCOUN-004",
+				"name": "India"
+			},
+			{
+				"id": "REFCOUN-005",
+				"name": "South Africa"
+			},
+			{
+				"id": "REFCOUN-006",
+				"name": "Australia"
+			}
+		],
+		"RefJobTitle": [
+			{
+				"id": "REFJOB-001",
+				"name": "Sales Operative"
+			},
+			{
+				"id": "REFJOB-002",
+				"name": "Electrician"
+			},
+			{
+				"id": "REFJOB-003",
+				"name": "Technician"
+			}
+		],
+		"RefPersonTitle": [
+			{
+				"id": "REFPER-001",
+				"name": "Mr"
+			},
+			{
+				"id": "REFPER-002",
+				"name": "Mrs"
+			},
+			{
+				"id": "REFPER-003",
+				"name": "Ms"
+			},
+			{
+				"id": "REFPER-004",
+				"name": "Dr"
+			}
+		],
+		"RefInvoiceStatus": [
+			{
+				"id": "REFINV-001",
+				"name": "Waiting Payment"
+			},
+			{
+				"id": "REFINV-002",
+				"name": "Overdue"
+			}
+		],
+		"RefSalesOrderItemStatus": [
+			{
+				"id": "ORDL-STA-01",
+				"name": "Order"
+			},
+			{
+				"id": "ORDL-STA-02",
+				"name": "Ship"
+			},
+			{
+				"id": "ORDL-STA-03",
+				"name": "Order Complete"
+			}
+		],
+		"RefServiceRequestType": [
+			{
+				"id": "SER-REQ-TYP-001",
+				"name": "Technician-Fixed"
+			},
+			{
+				"id": "SER-REQ-TYP-002",
+				"name": "Technician-Visit"
+			},
+			{
+				"id": "SER-REQ-TYP-003",
+				"name": "Automated Request"
+			},
+			{
+				"id": "SER-REQ-TYP-004",
+				"name": "Inventory Request"
+			}
+		],
+		"RefImage": [
+			{
+				"id": "PROD00001-MD",
+				"imageType": "Medium",
+				"name": "PROD00001-m.png"
+			},
+			{
+				"id": "PROD00002-LG",
+				"imageType": "Large",
+				"name": "PROD00002-l.png"
+			},
+			{
+				"id": "PROD00002-MD",
+				"imageType": "Medium",
+				"name": "PROD00002-m.png"
+			},
+			{
+				"id": "PROD00003-MD",
+				"imageType": "Medium",
+				"name": "PROD00003-m.png"
+			},
+			{
+				"id": "PROD00004-MD",
+				"imageType": "Medium",
+				"name": "PROD00004-m.png"
+			},
+			{
+				"id": "PROD00005-MD",
+				"imageType": "Medium",
+				"name": "PROD00005-m.png"
+			},
+			{
+				"id": "PROD00006-MD",
+				"imageType": "Medium",
+				"name": "PROD00006-m.png"
+			},
+			{
+				"id": "CUST00001-M",
+				"imageType": "Medium",
+				"name": "CUST00001-m.jpg"
+			},
+			{
+				"id": "CUST00002-M",
+				"imageType": "Medium",
+				"name": "CUST00002-m.jpg"
+			},
+			{
+				"id": "CUST00003-M",
+				"imageType": "Medium",
+				"name": "CUST00003-m.jpg"
+			},
+			{
+				"id": "CUST00004-M",
+				"imageType": "Medium",
+				"name": "CUST00004-m.jpg"
+			},
+			{
+				"id": "CUST00005-M",
+				"imageType": "Medium",
+				"name": "CUST00005-m.jpg"
+			},
+			{
+				"id": "CUST00006-M",
+				"imageType": "Medium",
+				"name": "CUST00006-m.jpg"
+			},
+			{
+				"id": "CUST00007-M",
+				"imageType": "Medium",
+				"name": "CUST00007-m.jpg"
+			},
+			{
+				"id": "CUST00008-M",
+				"imageType": "Medium",
+				"name": "CUST00008-m.jpg"
+			},
+			{
+				"id": "CUST00009-M",
+				"imageType": "Medium",
+				"name": "CUST00009-m.jpg"
+			},
+			{
+				"id": "CUST00010-M",
+				"imageType": "Medium",
+				"name": "CUST00010-m.jpg"
+			},			
+			{
+				"id": "PROD00501-MD",
+				"imageType": "Medium",
+				"name": "PROD00501-m.png"
+			},
+			{
+				"id": "PROD00502-MD",
+				"imageType": "Medium",
+				"name": "PROD00502-m.png"
+			},
+			{
+				"id": "PROD00503-MD",
+				"imageType": "Medium",
+				"name": "PROD00503-m.png"
+			},
+			{
+				"id": "PROD00504-MD",
+				"imageType": "Medium",
+				"name": "PROD00504-m.png"
+			},
+			{
+				"id": "PROD00505-MD",
+				"imageType": "Medium",
+				"name": "PROD00505-m.png"
+			}
+		],
+		"RefInventoryType": [
+			{
+				"id": "REFINV-01",
+				"name": "ON_SHELF"
+			},
+			{
+				"id": "REFINV-02",
+				"name": "IN_TRANSIT"
+			},
+			{
+				"id": "REFINV-03",
+				"name": "WASTAGE"
+			},
+			{
+				"id": "REFINV-04",
+				"name": "RETURN"
+			}
+		],
+		"RefDemoIdentifier": [
+			{
+				"id": "GP00001",
+				"name": "RACM Manufacturing"
+			},
+			{
+				"id": "GP00002",
+				"name": "RACM Utilities"
+			},
+			{
+				"id": "GP00003",
+				"name": "IoT Connected Inventory"
+			},
+			{
+				"id": "GP00004",
+				"name": "Trolley Control"
+			},
+			{
+				"id": "GP00005",
+				"name": "RACM Cisco"
+			}
+		]
+	}
+}

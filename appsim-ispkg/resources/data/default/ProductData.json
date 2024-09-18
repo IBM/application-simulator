@@ -1,0 +1,102 @@
+﻿{
+	"dataLoad": {
+		"Product": [
+			{
+				"id": "PROD00001",
+				"productName": "Certuss Junior 80 - 400 TC",
+				"productDescription": "Certuss Junior 80 - 400 TC",
+				"manufacturerId": "MNFR_014",
+				"purchaseCost": 14000.0,
+				"listPrice": 15450.0,
+				"productTypeId": "PRO-CAT-004",
+				"UOMTypeId": "UOM-001",
+				"merchandiseId": "MERCH-001",
+				"currencyId": "CUR-001",
+				"brandId": "BRD-001",
+				"imageId": "PROD00001-MD",
+				"demoId": "GP00001",
+				"bestBeforeDate": ""
+			},
+			{
+				"id": "PROD00002",
+				"productName": "Certuss Universal TC 500 – 1800",
+				"productDescription": "Certuss Universal TC 500 – 1800",
+				"manufacturerId": "MNFR_014",
+				"purchaseCost": 6000.0,
+				"listPrice": 8500.0,
+				"productTypeId": "PRO-CAT-004",
+				"UOMTypeId": "UOM-001",
+				"merchandiseId": "MERCH-001",
+				"currencyId": "CUR-001",
+				"brandId": "BRD-001",
+				"imageId": "PROD00002-MD",
+				"demoId": "GP00001",
+				"bestBeforeDate": ""
+			},
+			{
+				"id": "PROD00003",
+				"productName": "Certuss Electrical E 6 – 72 M",
+				"productDescription": "Certuss Electrical E 6 – 72 M",
+				"manufacturerId": "MNFR_014",
+				"purchaseCost": 15999.0,
+				"listPrice": 17250.0,
+				"productTypeId": "PRO-CAT-003",
+				"UOMTypeId": "UOM-001",
+				"merchandiseId": "MERCH-001",
+				"currencyId": "CUR-001",
+				"brandId": "BRD-001",
+				"imageId": "PROD00003-MD",
+				"demoId": "GP00001",
+				"bestBeforeDate": ""
+			},
+			{
+				"id": "PROD00004",
+				"productName": "Certuss Electrical E 100 – 120 M",
+				"productDescription": "Certuss Electrical E 100 – 120 M",
+				"manufacturerId": "MNFR_014",
+				"purchaseCost": 14340.0,
+				"listPrice": 15000.0,
+				"productTypeId": "PRO-CAT-004",
+				"UOMTypeId": "UOM-001",
+				"merchandiseId": "MERCH-001",
+				"currencyId": "CUR-001",
+				"brandId": "BRD-001",
+				"imageId": "PROD00004-MD",
+				"demoId": "GP00001",
+				"bestBeforeDate": ""
+			},
+			{
+				"id": "PROD00005",
+				"productName": "Amelin SGVC 10-100",
+				"productDescription": "Amelin SGVC 10-100",
+				"manufacturerId": "MNFR_014",
+				"purchaseCost": 15500.0,
+				"listPrice": 16245.0,
+				"productTypeId": "PRO-CAT-004",
+				"UOMTypeId": "UOM-001",
+				"merchandiseId": "MERCH-001",
+				"currencyId": "CUR-001",
+				"brandId": "BRD-001",
+				"imageId": "PROD00005-MD",
+				"demoId": "GP00001",
+				"bestBeforeDate": ""
+			},
+			{
+				"id": "PROD00006",
+				"productName": "Articulated robot",
+				"productDescription": "ECORP 10 R1100",
+				"manufacturerId": "MNFR_014",
+				"purchaseCost": 15500.0,
+				"listPrice": 16245.0,
+				"productTypeId": "PRO-CAT-004",
+				"UOMTypeId": "UOM-001",
+				"merchandiseId": "MERCH-001",
+				"currencyId": "CUR-001",
+				"brandId": "BRD-001",
+				"imageId": "PROD00006-MD",
+				"demoId": "GP00001",
+				"bestBeforeDate": ""
+			}
+		]
+	}
+}

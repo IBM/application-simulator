@@ -1,0 +1,36 @@
+<div class="toast-container" role="status" aria-live="assertive" aria-atomic="true">
+    <ng-container *ngFor="let message of messages; let i = index">
+        <ng-container *ngIf="message.text !== ''">
+            <ng-container *ngIf="message.type === 'error'">
+                <div class="dlt-toast error-border" id="toast-error" aria-labelledby="toast-error">
+                    <div class="title-wrapper">
+                        <span class="dlt-icon-error error-icon"></span>
+                        <div class="toast-title">Error</div>
+                        <i class="dlt-icon-close close-toast"></i>
+                    </div>
+                    <div class="toast-message">{{message.text}}</div>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="message.type === 'success'">
+                <div class="dlt-toast success-border" id="toast-success" aria-labelledby="toast-error">
+                    <div class="title-wrapper">
+                        <span class="dlt-icon-success success-icon"></span>
+                        <div class="toast-title">Success</div>
+                        <i class="dlt-icon-close close-toast"></i>
+                    </div>
+                    <div class="toast-message">{{message.text}}</div>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="message.type === 'info'">
+                <div class="dlt-toast info-border" id="toast-success" aria-labelledby="toast-error">
+                    <div class="title-wrapper">
+                        <span class="dlt-icon-info info-icon"></span>
+                        <div class="toast-title">Info</div>
+                        <i class="dlt-icon-close close-toast"></i>
+                    </div>
+                    <div class="toast-message">{{message.text}}</div>
+                </div>
+            </ng-container>
+        </ng-container>
+    </ng-container>
+</div>

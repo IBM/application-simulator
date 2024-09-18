@@ -1,0 +1,41 @@
+<div class="login-container mt-5">
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="login()">
+        <h3 class="mb-4">Application Simulator</h3>
+        <div>
+            <h5>Log in to your account.</h5>
+        </div>
+        <div>
+            <p class="mb-4">Don't have an account? <a routerLink="/requestaccess" style="text-decoration: underline;">Request access here</a></p>
+        </div>
+        <fieldset>
+            <div class="dlt-form-item" [ngClass]="{'error-input': loginForm.controls.username.dirty && loginForm.controls.username.errors}">
+                <label class="dlt-form-label" for="username">Username</label>
+                <div class="dlt-form-group">
+                    <input id="username" type="text" required="" class="dlt-text-input" formControlName="username" placeholder="jane_asuser">
+                    <button class="clear-icon" type="button"><i class="dlt-icon-close"></i></button>
+                </div>
+                <div class="dlt-form-requirement" id="text-error" *ngIf="loginForm.controls.username.dirty && loginForm.controls.username.errors?.['required']">
+                    <i class="dlt-icon-error input-error-icon"></i>
+                    <span class="error-message">Please enter a username</span>
+                </div>
+            </div>
+            <div class="dlt-form-item" [ngClass]="{'error-input': loginForm.controls.password.dirty && loginForm.controls.password.errors}">
+                <label class="dlt-form-label" for="password">Password</label>
+                <div class="dlt-form-group">
+                    <input id="password" type="password" required="" class="dlt-text-input" formControlName="password">
+                    <button class="clear-icon clear-icon-more-padding" tabindex="-1" type="button" aria-label="Clear"><i class="dlt-icon-close"></i></button>
+                    <button class="password-show-icon" tabindex="-1" type="button" data-i18n-title-show="Show password" data-i18n-title-hide="Hide password" title="Show Password">
+                        <i class="dlt-icon-password-show"></i>
+                    </button>
+                </div>
+                <div class="dlt-form-requirement" id="text-error" *ngIf="loginForm.controls.password.dirty && loginForm.controls.password.errors?.['required']">
+                    <i class="dlt-icon-error input-error-icon"></i>
+                    <span class="error-message">Please enter a password</span>
+                </div>
+            </div>
+        </fieldset>
+        <div class="dlt-form-item dlt-cta-holder">
+            <button class="dlt-button dlt-button-primary" style="width: 100%; display: block;" [disabled]="loginForm.invalid">Log in</button>
+        </div>
+    </form>
+</div>

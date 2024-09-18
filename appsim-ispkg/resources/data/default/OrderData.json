@@ -1,0 +1,168 @@
+﻿{
+	"dataLoad": {
+		"SalesOrder": [
+			{
+				"id": "ORD-100001",
+				"customerId": "CUST00001",
+				"statusId": "ORD-STA-08",
+				"totalValue": 1499.0,
+				"orderDate": "2018-10-10T00:00:00+0100",
+				"shipDate": "2018-10-12T00:00:00+0100",
+				"isUrgent": false,
+				"currencyId": "CUR-003",
+				"processTypeId": "PRO-TYPE-01",
+				"orderItemCount": 1,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "ORD-100002",
+				"customerId": "CUST00001",
+				"statusId": "ORD-STA-08",
+				"totalValue": 749.0,
+				"orderDate": "2018-10-10T00:00:00+0100",
+				"shipDate": "2018-10-12T00:00:00+0100",
+				"isUrgent": false,
+				"currencyId": "CUR-003",
+				"processTypeId": "PRO-TYPE-02",
+				"orderItemCount": 1,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "ORD-100003",
+				"customerId": "CUST00003",
+				"statusId": "ORD-STA-02",
+				"totalValue": 15450.0,
+				"orderDate": "2018-10-17T00:00:00+0100",
+				"shipDate": "2018-10-17T00:00:00+0100",
+				"isUrgent": false,
+				"currencyId": "CUR-001",
+				"processTypeId": "PRO-TYPE-03",
+				"orderItemCount": 1,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "ORD-100004",
+				"customerId": "CUST00004",
+				"statusId": "ORD-STA-03",
+				"totalValue": 15000.0,
+				"orderDate": "2018-10-10T00:00:00+0100",
+				"shipDate": "2018-10-12T00:00:00+0100",
+				"isUrgent": false,
+				"currencyId": "CUR-001",
+				"processTypeId": "PRO-TYPE-03",
+				"orderItemCount": 1,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "ORD-100005",
+				"customerId": "CUST00004",
+				"statusId": "ORD-STA-02",
+				"totalValue": 15000.0,
+				"orderDate": "2018-10-10T00:00:00+0100",
+				"shipDate": "2018-10-11T00:00:00+0100",
+				"isUrgent": false,
+				"currencyId": "CUR-001",
+				"processTypeId": "PRO-TYPE-03",
+				"orderItemCount": 1,
+				"demoId": "GP00001"
+			},
+			{
+				"id": "ORD-100008",
+				"customerId": "CUST00004",
+				"statusId": "ORD-STA-02",
+				"totalValue": 75000.0,
+				"orderDate": "2018-04-11T00:00:00+0100",
+				"shipDate": "2018-04-12T00:00:00+0100",
+				"isUrgent": false,
+				"currencyId": "CUR-001",
+				"processTypeId": "PRO-TYPE-03",
+				"orderItemCount": 1,
+				"demoId": "GP00001"
+			}
+		],
+		"SalesOrderItem": [
+			{
+				"id": "ORD-100001-ORDL-001",
+				"orderId": "ORD-100001",
+				"productId": "PROD00001",
+				"statusId": "ORDL-STA-01",
+				"quantity": 1.0,
+				"price": 1499.0,
+				"totalValue": 1499.0,
+				"currencyId": "CUR-003"
+			},
+			{
+				"id": "ORD-100002-ORDL-001",
+				"orderId": "ORD-100002",
+				"productId": "PROD00002",
+				"statusId": "ORDL-STA-01",
+				"quantity": 1.0,
+				"price": 749.0,
+				"totalValue": 749.0,
+				"currencyId": "CUR-003"
+			},
+			{
+				"id": "ORD-100003-ORDL-001",
+				"orderId": "ORD-100003",
+				"productId": "PROD00001",
+				"statusId": "ORDL-STA-02",
+				"quantity": 1.0,
+				"price": 15450.0,
+				"totalValue": 15450.0,
+				"currencyId": "CUR-001"
+			},
+			{
+				"id": "ORD-100004-ORDL-001",
+				"orderId": "ORD-100004",
+				"productId": "PROD00004",
+				"statusId": "ORDL-STA-03",
+				"quantity": 1.0,
+				"price": 15000.0,
+				"totalValue": 15000.0,
+				"currencyId": "CUR-001"
+			},
+			{
+				"id": "ORD-100005-ORDL-001",
+				"orderId": "ORD-100005",
+				"productId": "PROD00004",
+				"statusId": "ORDL-STA-02",
+				"quantity": 1.0,
+				"price": 15000.0,
+				"totalValue": 15000.0,
+				"currencyId": "CUR-001"
+			},
+			{
+				"id": "ORD-100008-ORDL-001",
+				"orderId": "ORD-100008",
+				"productId": "PROD00004",
+				"statusId": "ORDL-STA-02",
+				"quantity": 3.0,
+				"price": 15000.0,
+				"totalValue": 45000.0,
+				"currencyId": "CUR-001"
+			}
+		],
+		"PurchaseOrder": [
+			{
+				"id": "PO_001",
+				"PODate": "2018-10-10T14:57:00+0100",
+				"customerId": "CUST00001",
+				"shippingAddressId": "ADDR00003",
+				"total": 15450.0,
+				"purchaseOrderItemCount": 1,
+				"demoId": "GP00001"
+			}
+		],
+		"PurchaseOrderItem": [
+			{
+				"id": "POI_001",
+				"PurchaseOrderId": "PO_001",
+				"itemNumber": 1.0,
+				"productId": "PROD00001",
+				"unitPrice": 15450.0,
+				"quantity": 1.0,
+				"total": 15450.0
+			}
+		]
+	}
+}

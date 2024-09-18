@@ -1,0 +1,60 @@
+<ng-container *ngIf="loggedInUser.username === ''">
+    <div class="col-lg-4 offset-lg-4" style="margin-top: 204px;">
+        <div class="dlt-loader" aria-busy='false' aria-live="polite" aria-label="Loading">
+            <div class="dlt-loader--linear dlt-loader__text--below">
+                <div class="dlt-loader--linear-indeterminate" role="progressbar"></div>
+            </div>
+            <div class="dlt-loader__text">
+                <span>loading...</span>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="loggedInUser.username !== ''">
+    <div class="home-container">
+        <div class="heading-container">
+            <h3>Welcome, {{loggedInUser.username}}</h3>
+        </div>
+        <div class="cards-container">
+            <div class="dlt-card" aria-label="Swagger" aria-describedby="card-two-title">
+                <div class="dlt-card-title">
+                    <div class="icon-holder">
+                        <i class="dlt-icon-document-with-code"></i>
+                    </div>
+                    <h3 class="with-icon" id="card-two-title">
+                        Swagger documentation
+                        <span>&nbsp;</span>
+                    </h3>
+                </div>
+                <div class="dlt-card-content">
+                    <p>Learn and create APIs using Swagger.</p>
+                </div>
+                <div class="dlt-card-actions">
+                    <a class="dlt-button dlt-button-icon sm-icon-button" href="https://labcase.softwareag.com/storage/d/baf127d579f7cc69e0a0eb5622fbe46b" target="_blank" aria-label="Download">
+                        <i class="dlt-icon-download"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="dlt-card" aria-label="Budget allocation" aria-describedby="card-two-title">
+                <div class="dlt-card-title">
+                    <div class="icon-holder">
+                        <i class="dlt-icon-document-with-code"></i>
+                    </div>
+                    <h3 class="with-icon" id="card-two-title">
+                        Postman collection
+                        <span>&nbsp;</span>
+                    </h3>
+                </div>
+                <div class="dlt-card-content">
+                    <p>Learn and try APIs using Postman.</p>
+                </div>
+                <div class="dlt-card-actions">
+                    <a class="dlt-button dlt-button-icon sm-icon-button" href="https://labcase.softwareag.com/storage/d/95b6d14fa452981278186bb16a772a14" target="_blank" aria-label="Download">
+                        <i class="dlt-icon-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
+  

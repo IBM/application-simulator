@@ -1,0 +1,104 @@
+{
+	"dataLoad": {
+		"Metadata": [
+			{
+				"version": 1.1,
+				"description": "Inventory Data",
+				"industryType": "",
+				"usedInDemos": "",
+				"lastModifiedBy": "",
+				"lastModifiedDate": "2018-08-22T00:00:00+0100",
+				"reasonsForThisVersionOrIndustryType": "None",
+				"comments": ""	
+			}		
+		],
+		"InventoryProducts": [
+			{
+				"id": "INVT-PROD-0001",
+				"inventoryId": "INVT-0001",
+				"productId": "PROD00001",
+				"quantity": 5.0
+			},
+			{
+				"id": "INVT-PROD-0002",
+				"inventoryId": "INVT-0001",
+				"productId": "PROD00002",
+				"quantity": 8.0
+			},
+			{
+				"id": "INVT-PROD-0003",
+				"inventoryId": "INVT-0002",
+				"productId": "PROD00003",
+				"quantity": 6.0
+			},
+			{
+				"id": "INVT-PROD-0004",
+				"inventoryId": "INVT-0003",
+				"productId": "PROD00004",
+				"quantity": 25.0
+			},
+			{
+				"id": "INVT-PROD-0005",
+				"inventoryId": "INVT-0004",
+				"productId": "PROD00005",
+				"quantity": 18.0
+			},
+			{
+				"id": "INVT-PROD-0006",
+				"inventoryId": "INVT-0005",
+				"productId": "PROD00006",
+				"quantity": 7.0
+			},
+			{
+				"id": "INVT-PROD-0007",
+				"inventoryId": "INVT-0006",
+				"productId": "PROD00006",
+				"quantity": 7.0
+			}			
+		],
+		"Inventory": [
+			{
+				"id": "INVT-0001",
+				"locationId": "LOC00001",
+				"batchId": "",
+				"serialNumber": "",					
+				"inventoryTypeId": "REFINV-01"
+			},
+			{
+				"id": "INVT-0002",
+				"locationId": "LOC00002",
+				"batchId": "",
+				"serialNumber": "",					
+				"inventoryTypeId": "REFINV-01"
+			},
+			{
+				"id": "INVT-0003",
+				"locationId": "LOC00003",
+				"batchId": "",
+				"serialNumber": "",					
+				"inventoryTypeId": "REFINV-01"
+			},
+			{
+				"id": "INVT-0004",
+				"locationId": "LOC00004",
+				"batchId": "",
+				"serialNumber": "",					
+				"inventoryTypeId": "REFINV-01"
+			},
+			{
+				"id": "INVT-0005",
+				"locationId": "LOC00005",
+				"batchId": "",
+				"serialNumber": "",					
+				"inventoryTypeId": "REFINV-01"
+			},
+			{
+				"id": "INVT-0006",
+				"locationId": "LOC00006",
+				"batchId": "",
+				"serialNumber": "",					
+				"inventoryTypeId": "REFINV-01"
+			}
+		]
+	}
+}

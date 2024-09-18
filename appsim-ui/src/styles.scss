@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+}
+
+.dlt-data-table-container {
+    padding: 0;
+}
+
+.dlt-form-item {
+    margin-bottom: 16px;
+}
+
+
+form > fieldset > legend {
+    font-size: var(--dlt-font-size-lg,1.25rem);
+    font-weight: var(--dlt-font-weight-medium,500);
+}

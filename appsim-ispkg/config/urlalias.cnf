@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="appsim/customers" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimcustomers</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/devices" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimdevices</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/products" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimproducts</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/purchaseorders" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimpurchaseorders</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/salesorders" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimsalesorders</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/servicerequests" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimservicerequests</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/addresses" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimaddresses</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/login" javaclass="com.wm.util.Values">
+    <value name="urlPath">invoke/wm.server/login</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/login/user" javaclass="com.wm.util.Values">
+    <value name="urlPath">invoke/AppSim.impl.util/getLoggedInUser</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/logout" javaclass="com.wm.util.Values">
+    <value name="urlPath">invoke/wm.server/disconnect</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/accessrequests" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimaccessrequests</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/locations" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimlocations</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/countries" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimcountries</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/currencies" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimcurrencies</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/purchaseorderitems" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimpurchaseorderitems</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/salesorderitems" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimsalesorderitems</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/datasets" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimdatasets</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/charts" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimcharts</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/kpimetrics" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimkpimetrics</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/inventories" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsiminventories</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="appsim/personnel" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AppSim.api:appsim/appsimpersonnel</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+</Values>

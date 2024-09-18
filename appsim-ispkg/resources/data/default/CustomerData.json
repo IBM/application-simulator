@@ -1,0 +1,90 @@
+﻿{
+	"dataLoad": {
+		"Customer": [
+			{
+				"id": "CUST00001",
+				"addressId": "ADDR00001",
+				"customerTypeId": "REFCUS-001",
+				"customerGradeId": "CUS-GR-04",
+				"imageId": "CUST00001-M",
+				"companyName": "City Hospital",
+				"mainContact": "CC00001",
+				"demoId": "GP00001"
+			},
+			{
+				"id": "CUST00002",
+				"addressId": "ADDR00002",
+				"customerTypeId": "REFCUS-001",
+				"customerGradeId": "CUS-GR-04",
+				"imageId": "CUST00002-M",
+				"companyName": "Holy Hospital",
+				"mainContact": "CC00002",
+				"demoId": "GP00001"
+			},
+			{
+				"id": "CUST00003",
+				"addressId": "ADDR00003",
+				"customerTypeId": "REFCUS-001",
+				"customerGradeId": "CUS-GR-04",
+				"imageId": "CUST00003-M",
+				"companyName": "Apollo Hospital",
+				"mainContact": "NA",
+				"demoId": "GP00001"
+			},
+			{
+				"id": "CUST00004",
+				"addressId": "ADDR00004",
+				"customerTypeId": "REFCUS-001",
+				"customerGradeId": "CUS-GR-04",
+				"imageId": "CUST00004-M",
+				"companyName": "Eye Care Center",
+				"mainContact": "NA",
+				"demoId": "GP00001"
+			},
+			{
+				"id": "CUST00009",
+				"addressId": "ADDR00009",
+				"customerTypeId": "REFCUS-001",
+				"customerGradeId": "CUS-GR-04",
+				"imageId": "CUST00009-M",
+				"companyName": "Best Clinic",
+				"mainContact": "NA",
+				"demoId": "GP00001"
+			},
+			{
+				"id": "CUST00010",
+				"addressId": "ADDR00010",
+				"customerTypeId": "REFCUS-001",
+				"customerGradeId": "CUS-GR-04",
+				"imageId": "CUST00010-M",
+				"companyName": "Faith Sanitarium",
+				"mainContact": "NA",
+				"demoId": "GP00001"
+			}
+		],	
+		"Personnel": [
+			{
+				"id": "Personnel-001",
+				"locationId": "LOC00001",
+				"jobTitleId": "REFJOB-003",
+				"addressId": "ADDR00001",
+				"title": "REFPER-001",
+				"firstName": "Patrick",
+				"lastName": "Jones",
+				"dateOfBirth": "1991-05-01T00:00:00+0100",				
+				"joinDate": "2012-05-01T00:00:00+0100"
+			},
+			{
+				"id": "Personnel-002",
+				"locationId": "LOC00002",
+				"jobTitleId": "REFJOB-002",
+				"addressId": "ADDR00002",
+				"title": "REFPER-003",
+				"firstName": "Maria",
+				"lastName": "Jefferson",
+				"dateOfBirth": "1992-05-01T00:00:00+0100",				
+				"joinDate": "2012-05-01T00:00:00+0100"
+			}			
+		]
+	}
+}

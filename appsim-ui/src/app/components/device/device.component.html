@@ -1,0 +1,250 @@
+<ng-container *ngIf="device === undefined">
+    <div class="col-lg-4 offset-lg-4" style="margin-top: 204px;">
+        <div class="dlt-loader" aria-busy='false' aria-live="polite" aria-label="Loading">
+            <div class="dlt-loader--linear dlt-loader__text--below">
+                <div class="dlt-loader--linear-indeterminate" role="progressbar"></div>
+            </div>
+            <div class="dlt-loader__text">
+                <span>loading...</span>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="device !== undefined">
+    <form name="deviceForm">
+        <fieldset>
+            <legend>Device details</legend>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="id">ID</label>
+                        <div class="dlt-form-group">
+                            <input id="id" name="id" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.id">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="serialno">Serial no.</label>
+                        <div class="dlt-form-group">
+                            <input id="serialno" name="serialno" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.serialNumber">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="manufactureDate">Manufacture date</label>
+                        <div class="dlt-form-group">
+                            <input id="addressLine1" name="addressLine1" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.serialNumber">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="repairCount">Repair count</label>
+                        <div class="dlt-form-group">
+                            <input id="repairCount" name="repairCount" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.repairCount">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="failureCount">Failure count</label>
+                        <div class="dlt-form-group">
+                            <input id="failureCount" name="failureCount" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.failureCount">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="runTime">Run time</label>
+                        <div class="dlt-form-group">
+                            <input id="runTime" name="runTime" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.runTime">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="plannedDowntime">Planned downtime</label>
+                        <div class="dlt-form-group">
+                            <input id="plannedDowntime" name="plannedDowntime" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.plannedDowntime">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="netTime">Net time</label>
+                        <div class="dlt-form-group">
+                            <input id="netTime" name="netTime" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.netTime">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="runningPercentage">Running percentage</label>
+                        <div class="dlt-form-group">
+                            <input id="runningPercentage" name="runningPercentage" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.runningPercent">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="failurePrediction">Failure prediction</label>
+                        <div class="dlt-form-group">
+                            <input id="failurePrediction" name="failurePrediction" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.failurePrediction">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="unplannedDowntime">Unplanned downtime</label>
+                        <div class="dlt-form-group">
+                            <input id="unplannedDowntime" name="unplannedDowntime" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.unplannedDowntime">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="unitsProduced">Units produced</label>
+                        <div class="dlt-form-group">
+                            <input id="unitsProduced" name="unitsProduced" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.unitsProduced">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="maxCapacity">Max. capacity</label>
+                        <div class="dlt-form-group">
+                            <input id="maxCapacity" name="maxCapacity" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.maxCapacity">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="noOfStops">No. of stops</label>
+                        <div class="dlt-form-group">
+                            <input id="noOfStops" name="noOfStops" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.numberOfStops">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="predictedDowntime">Predicted downtime</label>
+                        <div class="dlt-form-group">
+                            <input id="predictedDowntime" name="predictedDowntime" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.predictedDowntime">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="nextScheduledMaintenance">Next scheduled maintenance</label>
+                        <div class="dlt-form-group">
+                            <input id="nextScheduledMaintenance" name="nextScheduledMaintenance" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.monitoring.nextScheduledMaintenance">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="customer">Customer</label>
+                        <div class="dlt-form-group">
+                            <input id="customer" name="customer" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.customer.companyName">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="product">Product</label>
+                        <div class="dlt-form-group">
+                            <input id="product" name="product" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.product.manufacturer.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="locationRegion">Location region</label>
+                        <div class="dlt-form-group">
+                            <input id="location" name="location" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.location.region.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="category">Category</label>
+                        <div class="dlt-form-group">
+                            <input id="category" name="category" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.deviceCategory.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="model">Model</label>
+                        <div class="dlt-form-group">
+                            <input id="model" name="model" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.model.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="status">Status</label>
+                        <div class="dlt-form-group">
+                            <input id="status" name="status" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.deviceStatus.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="model">Manufacturer</label>
+                        <div class="dlt-form-group">
+                            <input id="manufacturer" name="manufacturer" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="device.manufacturer.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</ng-container>

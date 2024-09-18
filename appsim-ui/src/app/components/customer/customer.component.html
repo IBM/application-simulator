@@ -1,0 +1,99 @@
+<ng-container *ngIf="customer === undefined">
+    <div class="col-lg-4 offset-lg-4" style="margin-top: 204px;">
+        <div class="dlt-loader" aria-busy='false' aria-live="polite" aria-label="Loading">
+            <div class="dlt-loader--linear dlt-loader__text--below">
+                <div class="dlt-loader--linear-indeterminate" role="progressbar"></div>
+            </div>
+            <div class="dlt-loader__text">
+                <span>loading...</span>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="customer !== undefined">
+    <form name="customerForm">
+        <fieldset>
+            <legend>Customer details</legend>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="id">ID</label>
+                        <div class="dlt-form-group">
+                            <input id="id" name="id" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="customer.id">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="name">Name</label>
+                        <div class="dlt-form-group">
+                            <input id="name" name="name" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="customer.companyName">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="addressLine1">Address line 1</label>
+                        <div class="dlt-form-group">
+                            <input id="addressLine1" name="addressLine1" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="customer.address.addressLine1">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="addressLine2">Address line 2</label>
+                        <div class="dlt-form-group">
+                            <input id="addressLine2" name="addressLine2" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="customer.address.addressLine2">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="cityTown">City/ Town</label>
+                        <div class="dlt-form-group">
+                            <input id="cityTown" name="cityTown" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="customer.address.cityTown">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="postcodeZip">Postcode/ Zip</label>
+                        <div class="dlt-form-group">
+                            <input id="postcodeZip" name="postcodeZip" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="customer.address.postcodeZip">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="countyStateProvince">County/ State/ Province</label>
+                        <div class="dlt-form-group">
+                            <input id="countyStateProvince" name="countyStateProvince" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="customer.address.countyStateProvince">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="country">Country</label>
+                        <div class="dlt-form-group">
+                            <input id="country" name="country" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="customer.address.country.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</ng-container>

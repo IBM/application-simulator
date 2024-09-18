@@ -1,0 +1,116 @@
+﻿{
+	"dataLoad": {
+		"Metadata": [
+			{
+				"version": 1.1,
+				"description": "KPI Metrics Data",
+				"industryType": "",
+				"usedInDemos": "",
+				"lastModifiedBy": "",
+				"lastModifiedDate": "2020-11-23T00:00:00+0100",
+				"reasonsForThisVersionOrIndustryType": "None",
+				"comments": ""	
+			}		
+		],
+		"KPIMetric": [
+			{
+				"id": "KPI00001",
+				"name" : "Share Price"
+	 
+			},
+			{
+				"id": "KPI00002",
+				"name": "Share Earnings"
+
+			},
+			{
+				"id": "KPI00003",
+				"name": "Quarterly Sales"
+
+			},
+			{
+				"id": "KPI00004",
+				 "name" : "Online Sales"
+
+			},
+			{
+				"id": "KPI00005",
+				 "name" : "Phone Sales"
+
+			},
+			{
+				"id": "KPI00006",
+				"name" : "In-Store Sales"
+
+			}
+		],
+		"KPIMetricValue": [
+			{
+				"id": "KPIMV00001",
+				"kpiMetricId": "KPI00001",
+				"title": "Share Price",
+				"value": "26",
+				"uomId":  "UOM-007",
+				"warning": "",
+				"critical": "",
+				"direction": "ASC",
+				"lastUpdated": "2018-09-15T15:53:00+0000"
+			},
+			{
+				"id": "KPIMV00002",
+				"kpiMetricId": "KPI00002",
+				"value": "8.70",
+				"title": "Earnings Per Share",
+				"uomId":  "UOM-007",
+				"warning": "",
+				"critical": "",
+				"direction": "DESC",
+				"lastUpdated": "2018-09-15T15:53:00+0000"
+			},
+			{
+				"id": "KPIMV00003",
+				"kpiMetricId": "KPI00003",
+				"title": "Total Sales this Quarter",
+				"value": "1,906,736",
+				"uomId":  "UOM-007",
+				"warning": "",
+				"critical": "",
+				"direction": "DESC",
+				"lastUpdated": "2018-09-15T15:53:00+0000"
+			},
+			{
+				"id": "KPIMV00004",
+				"kpiMetricId": "KPI00004",
+				"value": "667,358",
+				"title": "Online Sales",
+				"uomId":  "UOM-007",
+				"warning": "",
+				"critical": "",
+				"direction": "DESC",
+				"lastUpdated": "2018-09-15T15:53:00+0000"
+			},
+			{
+				"id": "KPIMV00005",
+				"kpiMetricId": "KPI00005",
+				"value": "381,347",
+				"title": "Phone Sales",
+				"uomId":  "UOM-007",
+				"warning": "",
+				"critical": "",
+				"direction": "DESC",
+				"lastUpdated": "2018-09-15T15:53:00+0000"
+			},
+			{
+				"id": "KPIMV00006",
+				"kpiMetricId": "KPI00006",
+				"value": "858,031",
+				"title": "In-Store Sales",
+				"uomId":  "UOM-007",
+				"warning": "",
+				"critical": "",
+				"direction": "DESC",				
+				"lastUpdated": "2018-09-15T15:53:00+0000"
+			}
+		]
+	}
+}

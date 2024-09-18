@@ -1,0 +1,119 @@
+<ng-container *ngIf="product === undefined">
+    <div class="col-lg-4 offset-lg-4" style="margin-top: 204px;">
+        <div class="dlt-loader" aria-busy='false' aria-live="polite" aria-label="Loading">
+            <div class="dlt-loader--linear dlt-loader__text--below">
+                <div class="dlt-loader--linear-indeterminate" role="progressbar"></div>
+            </div>
+            <div class="dlt-loader__text">
+                <span>loading...</span>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="product !== undefined">
+    <form name="productForm">
+        <fieldset>
+            <legend>Product details</legend>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="id">ID</label>
+                        <div class="dlt-form-group">
+                            <input id="id" name="id" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="product.id">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="name">Name</label>
+                        <div class="dlt-form-group">
+                            <input id="name" name="name" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="product.productName">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="description">Description</label>
+                        <div class="dlt-form-group">
+                            <input id="description" name="description" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="product.productDescription">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="purchaseCost">Purchase cost</label>
+                        <div class="dlt-form-group">
+                            <input id="purchaseCost" name="purchaseCost" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="product.purchaseCost">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="listPrice">List price</label>
+                        <div class="dlt-form-group">
+                            <input id="listPrice" name="listPrice" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="product.listPrice">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="bestBeforeDate">Best before date</label>
+                        <div class="dlt-form-group">
+                            <input id="bestBeforeDate" name="bestBeforeDate" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="product.bestBeforeDate">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="manufacturer">Manufacturer</label>
+                        <div class="dlt-form-group">
+                            <input id="manufacturer" name="manufacturer" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="product.manufacturer.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="country">Type</label>
+                        <div class="dlt-form-group">
+                            <input id="type" name="type" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="product.productType.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="currency">Currency</label>
+                        <div class="dlt-form-group">
+                            <input id="currency" name="currency" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="product.currency.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="uomType">UOM type</label>
+                        <div class="dlt-form-group">
+                            <input id="uomType" name="uomType" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="product.UOMType.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</ng-container>

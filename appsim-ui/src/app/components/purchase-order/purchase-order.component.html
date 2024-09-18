@@ -1,0 +1,79 @@
+<ng-container *ngIf="purchaseOrder === undefined">
+    <div class="col-lg-4 offset-lg-4" style="margin-top: 204px;">
+        <div class="dlt-loader" aria-busy='false' aria-live="polite" aria-label="Loading">
+            <div class="dlt-loader--linear dlt-loader__text--below">
+                <div class="dlt-loader--linear-indeterminate" role="progressbar"></div>
+            </div>
+            <div class="dlt-loader__text">
+                <span>loading...</span>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="purchaseOrder !== undefined">
+    <form name="productForm">
+        <fieldset>
+            <legend>Purchase order details</legend>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="id">ID</label>
+                        <div class="dlt-form-group">
+                            <input id="id" name="id" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="purchaseOrder.id">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="name">PO date</label>
+                        <div class="dlt-form-group">
+                            <input id="poDate" name="poDate" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="purchaseOrder.PODate">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="total">Total</label>
+                        <div class="dlt-form-group">
+                            <input id="total" name="total" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="purchaseOrder.total">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="itemCount">Item count</label>
+                        <div class="dlt-form-group">
+                            <input id="itemCount" name="itemCount" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="purchaseOrder.purchaseOrderItemCount">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="customer">Customer</label>
+                        <div class="dlt-form-group">
+                            <input id="customer" name="customer" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="purchaseOrder.customer.companyName">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dlt-form-item">
+                        <label class="dlt-form-label" for="address">Address country</label>
+                        <div class="dlt-form-group">
+                            <input id="address" name="address" type="text" readonly="" required="" class="dlt-text-input" [(ngModel)]="purchaseOrder.address.country.name">
+                            <button class="clear-icon" type="button" tabindex="-1"><i class="dlt-icon-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</ng-container>

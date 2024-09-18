@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="encodeutf8">true</value>
+  <value name="shared">cHVibGljIHN0YXRpYyB2b2lkIGRlbGV0ZURpcmVjdG9yeShGaWxlIGZpbGUpCnsKCiAgICBmb3Ig
+KEZpbGUgc3ViZmlsZSA6IGZpbGUubGlzdEZpbGVzKCkpIHsgICAgCiAgICAgICAgaWYgKHN1YmZp
+bGUuaXNEaXJlY3RvcnkoKSkgewogICAgICAgICAgICBkZWxldGVEaXJlY3Rvcnkoc3ViZmlsZSk7
+CiAgICAgICAgfQogICAgICAgIHN1YmZpbGUuZGVsZXRlKCk7CiAgICB9Cn0=</value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+  <array name="imports" type="value" depth="1">
+    <value>com.wm.util.security.Bytes</value>
+    <value>java.io.ByteArrayOutputStream</value>
+    <value>java.io.File</value>
+    <value>java.io.FileInputStream</value>
+    <value>java.io.FileNotFoundException</value>
+    <value>java.io.FileOutputStream</value>
+    <value>java.io.FileWriter</value>
+    <value>org.apache.commons.io.FileUtils</value>
+    <value>org.apache.commons.io.filefilter.AndFileFilter</value>
+    <value>org.apache.commons.io.filefilter.CanReadFileFilter</value>
+    <value>org.apache.commons.io.filefilter.IOFileFilter</value>
+    <value>org.apache.commons.io.filefilter.TrueFileFilter</value>
+    <value>org.apache.commons.io.filefilter.WildcardFileFilter</value>
+    <value>org.apache.commons.lang.StringUtils</value>
+    <value>org.apache.commons.lang.exception.ExceptionUtils</value>
+    <value>java.io.IOException</value>
+    <value>java.io.InputStream</value>
+    <value>java.io.ObjectOutputStream</value>
+    <value>java.io.OutputStream</value>
+    <value>java.nio.file.FileVisitResult</value>
+    <value>java.nio.file.Files</value>
+    <value>java.nio.file.Path</value>
+    <value>java.nio.file.Paths</value>
+    <value>java.nio.file.SimpleFileVisitor</value>
+    <value>java.nio.file.attribute.BasicFileAttributes</value>
+    <value>java.util.ArrayList</value>
+    <value>java.util.List</value>
+    <value>java.util.zip.ZipEntry</value>
+    <value>java.util.zip.ZipFile</value>
+    <value>java.util.zip.ZipInputStream</value>
+    <value>java.util.zip.ZipOutputStream</value>
+  </array>
+</Values>

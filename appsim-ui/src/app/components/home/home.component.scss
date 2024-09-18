@@ -1,0 +1,26 @@
+.heading-container {
+    margin-bottom: 24px;
+}
+
+.cards-container {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.cards-container > .dlt-card {
+  margin-right: 24px;
+  max-width: 270px;
+}
+
+.dlt-drag-drop-item {
+  width: auto;
+}
+
+.dlt-drag-drop-item > .drop-zone {
+  padding: 5px;
+}
+
+.upload-button{  
+    text-align: center;
+}  
+  

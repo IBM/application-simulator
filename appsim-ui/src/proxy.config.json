@@ -1,0 +1,7 @@
+{
+    "/appsim": {
+      "target": "https://democenter-wm.com",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
